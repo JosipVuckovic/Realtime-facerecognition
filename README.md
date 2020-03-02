@@ -12,6 +12,8 @@ example:
           
 And put at least 10 pictures of the person inside.
 
+After the pictures are in folder, just runn StartProgram.py it will automatically create people vectors and start the camera feed.
+
 Requered libs:
 
           sudo apt-get install build-essential cmake
