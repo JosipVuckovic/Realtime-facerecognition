@@ -24,6 +24,7 @@ def real_time_detection():
     while True:
         frame = video_stream.read()
         frame_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # if working on Rasberyy change width=320 and height=240 to spead up 
         frame_image = imutils.resize(frame, width=640, height=480)
         r = frame.shape[1] / float(frame_image.shape[1])
         cv2.imshow("Frame", frame)
@@ -60,10 +61,11 @@ def real_time_detection():
             y = top - 15 if top - 15 > 15 else top + 15
             text_to_picture = "{}: {:.2f}%".format(person_name, person_percentage)
             cv2.putText(frame, text_to_picture, (left, y), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2)
-            time.sleep(0.3)
-            names_in_picture.clear()
-            perc_in_picture.clear()
-            time.sleep(0.3)
+            # This part was a attempt to ease the load on Rasberry
+            //time.sleep(0.3)
+            //names_in_picture.clear()
+            //perc_in_picture.clear()
+            //time.sleep(0.3)
 
 
         cv2.imshow("Frame", frame)
