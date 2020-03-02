@@ -9,6 +9,7 @@ To train the software, just create a folder with persons name in folder KnownPeo
 
 example:
           KnownPeople/PersonA
+          
 And put at least 10 pictures of the person inside.
 
 Requered libs:
