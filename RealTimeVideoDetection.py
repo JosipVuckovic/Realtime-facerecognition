@@ -45,11 +45,13 @@ def real_time_detection():
                 percentage = numpy.mean(confidence) * 100
 
                 if percentage > floor_detection_threshold:
+                    # Needs to be replaced with a dictionary
                     names_in_picture.append(person_name)
                     perc_in_picture.append(percentage)
 
-                    if percentage > req_prob:
-                        print("Send signal to unlock")
+                    # This was for the unlock part of the work, need to update this part to last version
+                    # if percentage > req_prob:
+                        # print("Send signal to unlock")
 
         for ((top, right, bottom, left), person_name, person_percentage) in zip(faces_locations_boxes, names_in_picture, perc_in_picture):
             top = int(top * r)
@@ -62,10 +64,10 @@ def real_time_detection():
             text_to_picture = "{}: {:.2f}%".format(person_name, person_percentage)
             cv2.putText(frame, text_to_picture, (left, y), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2)
             # This part was a attempt to ease the load on Rasberry
-            //time.sleep(0.3)
-            //names_in_picture.clear()
-            //perc_in_picture.clear()
-            //time.sleep(0.3)
+            # time.sleep(0.3)
+            # names_in_picture.clear()
+            # perc_in_picture.clear()
+            # time.sleep(0.3)
 
 
         cv2.imshow("Frame", frame)
