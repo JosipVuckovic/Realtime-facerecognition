@@ -31,7 +31,7 @@ def extract_known_embeddings():
             known_people[person_name] = [encoding]
 
 
-    # saves encodings to KnownPeople folder
+    # saves encodings to KnownEmbeddings folder
     print("Saving encodings")
     #encoding_data = {"encodings": known_people_encodings, "names": known_people_names}
     encoding_data = known_people
