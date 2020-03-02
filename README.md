@@ -5,6 +5,12 @@ Using Dlibs HOG detector as it was writen to be used on Rasberry Pi, using Dlib 
 Writen using Linux Mint, all requered libraries where installed as root as the are well known.
 This serverd as a base for MIPRO article, that code is in private repository as it contains personal photos.
 
+To train the software, just create a folder with persons name in folder KnownPeople
+
+example:
+          KnownPeople/PersonA
+And put at least 10 pictures of the person inside.
+
 Requered libs:
 
           sudo apt-get install build-essential cmake
