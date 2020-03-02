@@ -1,8 +1,9 @@
 # Realtime-facerecognition
 Facerecognition using OpenCV and Dlib
 
-Using Dlibs HOG detector as it was writen to be used on Rasberry Pi, using Dlib python wrapper face_recognition
-Writen using Linux Mint, all requered libraries where installed as root as the are well known
+Using Dlibs HOG detector as it was writen to be used on Rasberry Pi, using Dlib python wrapper face_recognition.
+Writen using Linux Mint, all requered libraries where installed as root as the are well known.
+This serverd as a base for MIPRO article, that code is in private repository as it contains personal photos.
 
 Requered libs:
 
